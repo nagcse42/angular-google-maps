@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-google-maps"
+    }
+  },
+  "defaultProject": "angular-google-maps",
+  "cli": {
+    "analytics": "faf5a54a-e9ae-44d5-b243-1ebb44cc234c"
+  }
 }

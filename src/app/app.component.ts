@@ -9,24 +9,7 @@ export class AppComponent implements OnInit {
   title = 'angular-google-maps';
 
   ngOnInit() {
-    if (!navigator.geolocation) {
-      console.log('Location not enabled for this device..')
-    } else {
-      navigator.geolocation.getCurrentPosition((location) => {
-        console.log(`latitude: ${location.coords.latitude}, logitude: ${location.coords.longitude}`)
-      });
-    }
+    console.log('AppComponent Init')
   }
 
-  watchPosition() {
-    navigator.geolocation.watchPosition((location) => {
-      console.log(`latitude: ${location.coords.latitude}, logitude: ${location.coords.longitude}`)
-    }, (error) => {
-      console.log(error);
-    }, {
-      enableHighAccuracy: true,
-      timeout: 5000,
-      maximumAge: 0
-    });
-  }
 }
